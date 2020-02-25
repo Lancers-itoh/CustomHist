@@ -1,0 +1,122 @@
+.inline_block{
+    display: inline-block;
+    width: 60px;
+    height: 200px;
+    position: absolute;
+}
+
+#GIF{
+    padding-top: 10px;
+    height: 400px;
+    background-color: white;
+    outline: solid;
+}
+
+#wrapper{
+    position: absolute;
+    background-color:white;
+    /*width = (.inline_block.style.width) + 隠すところまでのimg9.style.left*/
+    height: 400px;
+    z-index: 2;
+}
+
+#img0{
+    position: absolute;
+    left: 20px;
+}
+
+#img1{
+    position: absolute;
+    left: 80px;
+}
+
+#img2{
+    position: absolute;
+    left: 140px;
+}
+
+#img3{
+    position: absolute;
+    left: 200px;
+}
+
+#img4{
+    position: absolute;
+    left: 260px;
+}
+
+#img5{
+    position: absolute;
+    left: 320px;
+}
+
+#img6{
+    position: absolute;
+    left: 380px;
+}
+
+.inline_block #title{
+    position: absolute;
+    left: 460px;
+    bottom: -150px;
+}
+
+.inline_block img{
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  -webkit-transform : translate(-50%);
+  transform : translate(-50%);
+
+}
+
+.inline_block .label{
+    /*text以外にtext-align: center は聞かないので以下のようにして調整する*/
+    position: absolute;
+    left: 50%;
+    -webkit-transform : translate(-50%);
+    transform : translate(-50%);
+    /*top: 10%;*/
+    bottom: 55px;
+}
+.inline_block .value{
+    position: absolute;
+    left: 50%;
+    -webkit-transform : translate(-50%);
+    transform : translate(-50%);
+    top: 180px;
+}
+
+
+
+
+
+.red {
+    filter: invert(15%) sepia(95%) saturate(6932%) hue-rotate(358deg) brightness(95%) contrast(112%);
+}
+
+.green {
+    filter: invert(17%) sepia(91%) saturate(7085%) hue-rotate(128deg) brightness(100%) contrast(106%);
+}
+
+.blue {
+    filter: invert(8%) sepia(99%) saturate(7044%) hue-rotate(247deg) brightness(100%) contrast(145%);
+}
+.white {
+    filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%) contrast(101%);
+}
+.grey {
+    filter: invert(50%) sepia(0%) saturate(11%) hue-rotate(143deg) brightness(101%) contrast(93%);
+}
+.yellow {
+    filter: invert(81%) sepia(81%) saturate(633%) hue-rotate(359deg) brightness(106%) contrast(105%);
+}
+.orange {
+    filter: invert(72%) sepia(26%) saturate(6428%) hue-rotate(1deg) brightness(105%) contrast(102%);
+}
+.aqua {
+    filter: invert(88%) sepia(100%) saturate(2929%) hue-rotate(104deg) brightness(99%) contrast(104%);
+}
+.purple {
+    filter: invert(11%) sepia(71%) saturate(5170%) hue-rotate(293deg) brightness(87%) contrast(111%);
+}
