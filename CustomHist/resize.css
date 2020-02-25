@@ -2,63 +2,30 @@
     display: inline-block;
     width: 60px;
     height: 200px;
+    bottom: 0px;
+    left: 250px;
     position: absolute;
 }
 
 #GIF{
     padding-top: 10px;
-    height: 400px;
+    height: 700px;
     background-color: white;
-    outline: solid;
 }
 
 #wrapper{
     position: absolute;
-    background-color:white;
+    background-color: black;
     /*width = (.inline_block.style.width) + 隠すところまでのimg9.style.left*/
-    height: 400px;
+    height: 700px;
+    width: 10px;
     z-index: 2;
-}
-
-#img0{
-    position: absolute;
-    left: 20px;
-}
-
-#img1{
-    position: absolute;
-    left: 80px;
-}
-
-#img2{
-    position: absolute;
-    left: 140px;
-}
-
-#img3{
-    position: absolute;
-    left: 200px;
-}
-
-#img4{
-    position: absolute;
-    left: 260px;
-}
-
-#img5{
-    position: absolute;
-    left: 320px;
-}
-
-#img6{
-    position: absolute;
-    left: 380px;
 }
 
 .inline_block #title{
     position: absolute;
     left: 460px;
-    bottom: -150px;
+    bottom: 0px;
 }
 
 .inline_block img{
