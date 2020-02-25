@@ -16,7 +16,7 @@
     position: absolute;
     background-color:white;
     /*width = (.inline_block.style.width) + 隠すところまでのimg9.style.left*/
-    height: 350px;
+    height: 400px;
     z-index: 2;
 }
 

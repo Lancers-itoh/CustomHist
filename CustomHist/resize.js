@@ -13,6 +13,7 @@ var tuned_position = 60;
 var max_size = 0;
 var is_first_time = true;
 var encoder;
+var RECORD_signal = false;
 
 function func1() {
     if(max_size != 0){
@@ -189,6 +190,16 @@ window.onload = function() {
     })
 }
 
+function record_do(){
+    RECORD_signal = !RECORD_signal;
+    if(RECORD_signal){
+        value = "録画する";
+    }else{
+        value = "録画しない";
+    }
+    document.getElementById("record_value").textContent =  value;
+}
+
 function resize_play(){
     console.log(interval_time);
     disabledButtons( true );
@@ -209,9 +220,11 @@ function resize_play(){
     var $labels = document.getElementsByClassName('label');
     //希望繊維時間
     
-    timelaps_interval = 1000;
-    End_time = (transition_time + interval_time)*(Data_length-3)+interval_time;
-    screen_shot_execute(End_time);
+    if(RECORD_signal){
+        timelaps_interval = 1;
+        End_time = (transition_time + interval_time)*(Data_length-3)+interval_time;
+        screen_shot_execute(End_time);
+    }
     for(var k=3; k < (Data_length); k++){
         setTimeout(animation, (transition_time + interval_time)*(k-3), k)
     }
